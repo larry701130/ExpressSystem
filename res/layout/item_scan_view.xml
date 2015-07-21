@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/partial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/BarcodeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partial_layout"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BarcodeID"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/warning_str"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Result"
+        android:layout_gravity="center"
+        android:text="@string/warning_string"
+        android:textColor="#FFFF1C19"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning_str" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/AppBaseTheme"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:text="@string/button_scan" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/AppBaseTheme"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:text="@string/button_reallocate" />
+    </TableRow>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableRow1"
+        android:hint="@string/hint_barcode" >
+
+        <requestFocus />
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF00BCBE"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/orderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#FFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

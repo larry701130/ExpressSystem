@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="5dip" >
+    <!-- Rightend Arrow -->
+<!--     <ImageView -->
+<!--         android:id="@+id/imageView1" -->
+<!--         android:contentDescription="@string/app_name" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:src="@drawable/arrow" /> -->
+    <!-- ID -->
+    <TextView
+        android:id="@+id/ID_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+    <!-- Order Type -->
+    <TextView
+        android:id="@+id/Order_Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_ordertype"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+    <!-- Name-->
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_sender"
+        android:textColor="#343434"
+        android:textSize="16sp"	/>
+    <!-- Company-->
+    <TextView
+        android:id="@+id/Company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_company"
+        android:textColor="#343434"
+        android:textSize="16sp"	/>
+    <!-- Address-->
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_addr"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+    <!-- TEL -->
+        <TextView
+        android:id="@+id/TEL_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_tel"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+   	<!-- Mobile -->
+        <TextView
+        android:id="@+id/Mobile_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_mobile"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+        
+    <!-- Name-->
+    <TextView
+        android:id="@+id/r_blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blank_str"
+        android:textColor="#343434"
+        android:textSize="16sp"	/>
+    <TextView
+        android:id="@+id/r_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_reciever"
+        android:textColor="#343434"
+        android:textSize="16sp"	/>
+    <!-- Company-->
+    <TextView
+        android:id="@+id/r_Company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_company"
+        android:textColor="#343434"
+        android:textSize="16sp"	/>
+    <!-- Address-->
+    <TextView
+        android:id="@+id/r_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_addr"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+    <!-- TEL -->
+        <TextView
+        android:id="@+id/r_TEL_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_tel"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+   	<!-- Mobile -->
+        <TextView
+        android:id="@+id/r_Mobile_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_mobile"
+        android:textColor="#343434"
+        android:textSize="16sp" />
+</LinearLayout>
